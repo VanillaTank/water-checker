@@ -49,8 +49,10 @@
 
     if (dayNum === 22 && dayName === 4) {
       checkIsWaterDone(dayNum);
-    } else if (dayNum === 23 && dayName === 5) {
+    } else if (dayNum === 23) {
+      if(dayName === 4 || dayName === 5) {
       checkIsWaterDone(dayNum);
+      }
     } else if (dayNum === 24 && dayName !== 6 && dayName !== 7) {
       checkIsWaterDone(dayNum);
     } else if (dayNum === 25 && dayName !== 6 && dayName !== 7) {
