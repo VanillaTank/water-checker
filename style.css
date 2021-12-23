@@ -1,4 +1,4 @@
-.banner_768hh {
+.banner_fgjh768hh {
   position: fixed;
   top: 30px;
   left: 50px;
@@ -11,18 +11,18 @@
   padding: 20px;
 }
 
-.text_768hh {
+.text_fgjh768hh {
   color: rgb(29, 27, 11);
   font-size: 24px;
   margin-bottom: 30px;
 }
 
-.btn-wrap_768hh {
+.btn-wrap_fgjh768hh {
   display: flex;
   justify-content: space-between;
 }
 
-.btn_768hh {
+.btn_fgjh768hh {
   background-color: rgb(255, 251, 230);
   font-size: 18px;
   text-transform: uppercase;
@@ -35,10 +35,10 @@
   cursor: pointer;
 }
 
-.btn_768hh:hover {
+.btn_fgjh768hh:hover {
   background-color: rgb(248, 241, 205);
 }
 
-.btn_768hh:active {
+.btn_fgjh768hh:active {
   background-color: rgb(255, 251, 230);
 }

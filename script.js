@@ -47,23 +47,22 @@
 
   function showBanner(dayNum) {
     const banner = document.createElement("div");
-    const randomStr = Math.random().toString(36).substring(2, 5)
-    banner.classList.add(`banner_${randomStr}`);
+    banner.classList.add(`banner_fgjh768hh`);
     banner.innerHTML = `
-    <div class="text_${randomStr}">Хоп, хей, лалалей! <br> 
+    <div class="text_fgjh768hh">Хоп, хей, лалалей! <br> 
       Сегодня ${dayNum} число. <br>
       Время комуналки пришло.
     </div>
 
-    <div class="btn-wrap_${randomStr}">
-      <button class="btn_${randomStr}" id="done_${randomStr}">Сделано</button>
-      <button class="btn_${randomStr}" id="after_${randomStr}">Потом сделаю</button>
+    <div class="btn-wrap_fgjh768hh">
+      <button class="btn_fgjh768hh" id="done_fgjh768hh">Сделано</button>
+      <button class="btn_fgjh768hh" id="after_fgjh768hh">Потом сделаю</button>
     </div>
 `;
     document.body.append(banner);
 
-    const btnDone = querySelector(`#done_${randomStr}`);
-    const btnLate = querySelector(`#after_${randomStr}`);
+    const btnDone = querySelector(`#done_fgjh768hh`);
+    const btnLate = querySelector(`#after_fgjh768hh`);
 
     btnDone.addEventListener("click", () => {
       onDoneClick(banner);
