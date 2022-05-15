@@ -1,44 +1,44 @@
 .banner_fgjh768hh {
-  position: fixed;
-  top: 30px;
-  left: 50px;
-  z-index: 10000;
-  background-color: rgb(255, 248, 228);
-  border-radius: 3px;
-  border: 1px solid rgb(236, 229, 208);
-  max-width: 350px;
-  height: 172px;
-  padding: 20px;
+  position: fixed !important;
+  top: 30px !important;
+  left: 50px !important;
+  z-index: 10000 !important;
+  background-color: rgb(255, 248, 228) !important;
+  border-radius: 3px !important;
+  border: 1px solid rgb(236, 229, 208) !important;
+  max-width: 350px !important;
+  height: 172px !important;
+  padding: 20px !important;
 }
 
 .text_fgjh768hh {
-  color: rgb(29, 27, 11);
-  font-size: 24px;
-  margin-bottom: 30px;
+  color: rgb(29, 27, 11) !important;
+  font-size: 24px !important;
+  margin-bottom: 30px !important;
 }
 
 .btn-wrap_fgjh768hh {
-  display: flex;
-  justify-content: space-between;
+  display: flex !important;
+  justify-content: space-between !important;
 }
 
 .btn_fgjh768hh {
-  background-color: rgb(255, 251, 230);
-  font-size: 18px;
-  text-transform: uppercase;
-  color: rgb(29, 27, 11);
-  padding: 5px 10px 4px;
-  box-shadow: none;
-  border: 2px solid rgb(29, 27, 11);
-  border-radius: 2px;
-  outline: none;
-  cursor: pointer;
+  background-color: rgb(255, 251, 230) !important;
+  font-size: 18px !important;
+  text-transform: uppercase !important;
+  color: rgb(29, 27, 11) !important;
+  padding: 5px 10px 4px !important;
+  box-shadow: none !important;
+  border: 2px solid rgb(29, 27, 11) !important;
+  border-radius: 2px !important;
+  outline: none !important;
+  cursor: pointer !important;
 }
 
 .btn_fgjh768hh:hover {
-  background-color: rgb(248, 241, 205);
+  background-color: rgb(248, 241, 205) !important;
 }
 
 .btn_fgjh768hh:active {
-  background-color: rgb(255, 251, 230);
+  background-color: rgb(255, 251, 230) !important;
 }
