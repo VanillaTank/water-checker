@@ -15,12 +15,18 @@
   }
 
   async function checkDateAndShowBanner() {
+    const date = new Date();
     const isWaterDone = await getIsWaterDone()
-    if (!isWaterDone && checkDate()) {
+    if (!isWaterDone && checkDate(date)) {
       showBanner(new Date().getDate());
-    } else if (isWaterDone) {
+    }
+
+    const dayNum = date.getDate();
+    if(dayNum === 26) {
       setIsWaterDone(false);
     }
+
+
   }
 
   /**
@@ -74,7 +80,7 @@
 
   function onDoneClick(banner) {
     chrome.storage.local.set({isWaterDone: true});
-    document.body.removeChild(banner);
+    documnet.body.removeChild(banner);
   }
 
   function onAfterClick(banner) {
