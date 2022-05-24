@@ -6,23 +6,25 @@
   // --------------------------------------------------
 
   async function run() {
-    const val = await getIsWaterDone()
+    const val = await getIsWaterDone();
     if (val == null) {
       setIsWaterDone(false)
     }
+
+
     setInterval(checkDateAndShowBanner, 1000 * 60 * 60 * 24);
     await checkDateAndShowBanner();
   }
 
   async function checkDateAndShowBanner() {
     const date = new Date();
-    const isWaterDone = await getIsWaterDone()
+    const isWaterDone = await getIsWaterDone();
     if (!isWaterDone && checkDate(date)) {
       showBanner(new Date().getDate());
     }
 
     const dayNum = date.getDate();
-    if(dayNum === 26) {
+    if (dayNum === 26) {
       setIsWaterDone(false);
     }
 
@@ -38,7 +40,7 @@
     const dayNum = date.getDate();
     const weekDay = date.getDay();
 
-    if(dayNum === 22 && (weekDay === 4 || weekDay === 5)) {
+    if (dayNum === 22 && (weekDay === 4 || weekDay === 5)) {
       return true
     } else if (dayNum === 23 && (weekDay === 4 || weekDay === 5)) {
       return true
@@ -46,7 +48,7 @@
       return true
     } else if (dayNum === 25 && weekDay !== 6 && weekDay !== 0) {
       return true
-    }  else {
+    } else {
       return false
     }
   }
@@ -80,7 +82,7 @@
 
   function onDoneClick(banner) {
     chrome.storage.local.set({isWaterDone: true});
-    documnet.body.removeChild(banner);
+    document.body.removeChild(banner);
   }
 
   function onAfterClick(banner) {
@@ -93,7 +95,9 @@
    */
   function getIsWaterDone() {
     return new Promise(resolve => {
-      chrome.storage.local.get(["isWaterDone"], result => resolve(result.key));
+      chrome.storage.local.get(["isWaterDone"], result => {
+        resolve(result.isWaterDone);
+      });
     })
   }
 
