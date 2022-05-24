@@ -1,4 +1,5 @@
 .banner_fgjh768hh {
+  box-sizing: content-box;
   position: fixed !important;
   top: 30px !important;
   left: 50px !important;
@@ -7,24 +8,35 @@
   border-radius: 3px !important;
   border: 1px solid rgb(236, 229, 208) !important;
   max-width: 350px !important;
-  height: 172px !important;
+  min-height: 160px !important;
+  height: 160px !important;
+  max-height: 160px !important;
   padding: 20px !important;
 }
 
 .text_fgjh768hh {
+  box-sizing: content-box;
   color: rgb(29, 27, 11) !important;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  line-height: 28px !important;
   font-size: 24px !important;
   margin-bottom: 30px !important;
 }
 
 .btn-wrap_fgjh768hh {
+  box-sizing: content-box;
   display: flex !important;
   justify-content: space-between !important;
 }
 
 .btn_fgjh768hh {
+  box-sizing: content-box;
   background-color: rgb(255, 251, 230) !important;
   font-size: 18px !important;
+  line-height: 20px !important;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
   text-transform: uppercase !important;
   color: rgb(29, 27, 11) !important;
   padding: 5px 10px 4px !important;
